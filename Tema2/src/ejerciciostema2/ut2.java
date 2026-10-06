@@ -452,4 +452,25 @@ public class ut2 {
 
         }
 
+        public static void ejercicio31(Scanner sc) {
+
+            final double CONSUMPTION=5.5;
+
+            System.out.println("Introduce un concepto (Diesel/95/98): ");
+            String concept=sc.nextLine();
+
+            System.out.println("Introduce el número de litros repostados: ");
+            double liters=sc.nextDouble();
+
+            System.out.println("Introduce el precio del diésel por litro: ");
+            double price=sc.nextDouble();
+
+            double finalPrice=liters*price;
+            int autonomy=(int)(liters/CONSUMPTION);
+
+            System.out.println("CONCEPTO\tLITROS\tPRECIO/L\tTOTAL");
+            System.out.println(concept+"\t\t"+liters+"\t"+price+"\t\t\t"+finalPrice);
+
+        }
+
 }

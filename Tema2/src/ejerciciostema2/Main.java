@@ -9,7 +9,7 @@ public class Main {
 
 
 
-            ut2.ejercicio30(sc);
+            ut2.ejercicio31(sc);
 
 
 
