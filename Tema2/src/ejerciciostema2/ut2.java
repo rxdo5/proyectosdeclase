@@ -432,4 +432,24 @@ public class ut2 {
 
         }
 
+        public static void ejercicio30(Scanner sc) { //------------------------------------------------
+
+            System.out.println("Introduce la primera nota de teoría (entera): ");
+            int TheoricGrade1=sc.nextInt();
+
+            System.out.println("Introduce la segunda nota de teoría (entera): ");
+            int TheoricGrade2=sc.nextInt();
+
+            System.out.println("Introduce la nota práctica (decimal): ");
+            double PracticalGrade=sc.nextDouble();
+
+            double TheoricGrade=(double)((TheoricGrade1+TheoricGrade2)/2.0);
+            double FinalGrade=(TheoricGrade*0.60)+(PracticalGrade*0.40);
+
+            System.out.println("La media teórica es: "+TheoricGrade);
+            System.out.println("La media real es: "+FinalGrade);
+            System.out.println("La nota entera para el boletín: "+Math.round(FinalGrade));
+
+        }
+
 }
