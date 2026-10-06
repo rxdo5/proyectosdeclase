@@ -452,7 +452,7 @@ public class ut2 {
 
         }
 
-        public static void ejercicio31(Scanner sc) {
+        public static void ejercicio31(Scanner sc) { //------------------------------------------------
 
             final double CONSUMPTION=5.5;
 
@@ -466,10 +466,11 @@ public class ut2 {
             double price=sc.nextDouble();
 
             double finalPrice=liters*price;
-            int autonomy=(int)(liters/CONSUMPTION);
+            int autonomy=(int)(liters/CONSUMPTION)*100;
 
             System.out.println("CONCEPTO\tLITROS\tPRECIO/L\tTOTAL");
             System.out.println(concept+"\t\t"+liters+"\t"+price+"\t\t\t"+finalPrice);
+            System.out.println("Autonomía a 5l/100km: "+autonomy);
 
         }
 
