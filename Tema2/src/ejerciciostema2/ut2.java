@@ -419,4 +419,17 @@ public class ut2 {
 			
 		}
 
+        public static void ejercicio29(Scanner sc) { //------------------------------------------------
+
+            final double POUND=0.453592;
+
+            System.out.println("Introduce un número de libras: ");
+            double poundInput=sc.nextDouble();
+
+            double kgOutput=poundInput*POUND;
+
+            System.out.println(poundInput+" libras en kg son "+kgOutput+" y en gramos son "+kgOutput*1000);
+
+        }
+
 }
