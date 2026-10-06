@@ -45,9 +45,9 @@ Este repositorio sirve como registro de mi aprendizaje y evolución en programac
 
 Los ejercicios están realizados con fines educativos y pueden contener soluciones propias, pruebas y diferentes formas de resolver un mismo problema.
 
-## Carpeta "_old"
+## 📔 Carpeta "_old"
 
-Esta capeta existe debido a que antes de migrar a IntelliJ IDEA, se usaba Notepad++, ese contenido antiguo se alamcena aqui.
+Esta capeta existe debido a que antes de migrar a IntelliJ IDEA, se usaba Notepad++, ese contenido antiguo se almacena aquí.
 
 ## ⚠️ Sobre el código
 
