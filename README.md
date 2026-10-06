@@ -29,9 +29,11 @@ Este repositorio irá creciendo a medida que avance el curso. Aquí se podrán e
 Los ejercicios se irán organizando por prácticas y/o bloques para que sea fácil localizar cada trabajo.
 
 ```text
-Programacion2026/
-├── Practicas/
-├── Ejercicios/
+proyectosdeclase/
+├── Tema2/
+├── Tema3/
+├── etc/
+├── LICENSE
 └── README.md
 ```
 
@@ -42,6 +44,10 @@ Programacion2026/
 Este repositorio sirve como registro de mi aprendizaje y evolución en programación durante el curso **2026/2027**.
 
 Los ejercicios están realizados con fines educativos y pueden contener soluciones propias, pruebas y diferentes formas de resolver un mismo problema.
+
+## 📔 Carpeta "_old"
+
+Esta capeta existe debido a que antes de migrar a IntelliJ IDEA, se usaba Notepad++, ese contenido antiguo se almacena aquí.
 
 ## ⚠️ Sobre el código
 
