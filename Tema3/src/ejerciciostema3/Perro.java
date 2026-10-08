@@ -1,4 +1,4 @@
-package ejemplostema3;
+package ejerciciostema3;
 
 public class Perro {
     public String nombre,raza,color;
