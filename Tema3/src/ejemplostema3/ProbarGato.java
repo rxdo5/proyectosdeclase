@@ -11,9 +11,16 @@ public class ProbarGato {
         segundoGato.asignarValores("Mohammed IV","Naranja doméstico",7);
 
         primerGato.maullar();
-        primerGato.mostrar();
+        System.out.println(primerGato.mostrar());
+        System.out.println("---------------------------");
+
         segundoGato.maullar();
-        segundoGato.mostrar();
+        System.out.println(segundoGato.mostrar());
+        System.out.println("---------------------------");
+
+        primerGato.vidas=8;
+        System.out.println(primerGato.mostrar());
+        System.out.println("---------------------------");
 
     }
 
