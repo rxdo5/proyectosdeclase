@@ -28,7 +28,7 @@ public class Telefono {
     public void cargar(int minutos){
         this.minutos=minutos;
         asignarBateria(this.bateria+this.minutos);
-        //this.bateria+=this.minutos;
+        //this.bateria+=this.minutos
     }
 
 }
