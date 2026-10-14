@@ -25,4 +25,9 @@ public class Gato {
         return "Nombre: "+this.nombre+"\nRaza: "+this.raza+"\nVidas: "+this.vidas;
     }
 
+    //EJERCICIO 7
+    public void restarVidas() {
+        this.vidas--;
+    }
+
 }

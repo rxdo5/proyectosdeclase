@@ -22,6 +22,14 @@ public class ProbarGato {
         System.out.println(primerGato.mostrar());
         System.out.println("---------------------------");
 
+        //EJECICIO 7
+        System.out.println("EJERCICIO 7:\n--------------");
+        System.out.println(primerGato.mostrar());
+        primerGato.restarVidas();
+        System.out.println("--------------");
+        System.out.println(primerGato.mostrar());
+
+
     }
 
 }
