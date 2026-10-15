@@ -7,6 +7,8 @@ public class ProbarCoche {
 
         String modelo,color,matricula;
         boolean metalizado;
+        Coche.Tipo tipo;
+        String tipoCoche;
 
         Scanner sc=new Scanner(System.in);
         Coche miCoche = new Coche();
@@ -21,9 +23,12 @@ public class ProbarCoche {
         System.out.println("Introduzca la matricula (En mayúscula):");
         matricula=sc.nextLine();
         System.out.println("Introduzca el tipo (MINI, UTILITARIO, FAMILIAR o DEPORTIVO):");
-        System.out.println(Coche.tipo.DEPORTIVO);
+        tipoCoche=sc.next();
+        tipo=Coche.Tipo.valueOf(tipoCoche);
+        //System.out.println(Coche.Tipo.DEPORTIVO);
 
-        miCoche.setCoche(modelo,color,matricula,metalizado,Coche.tipo.DEPORTIVO);
+        miCoche.setCoche(modelo,color,matricula,metalizado,tipo);
+        System.out.println(miCoche.imprimirCoche());
         System.out.println(miCoche.fichaCoche());
 
         sc.close();
