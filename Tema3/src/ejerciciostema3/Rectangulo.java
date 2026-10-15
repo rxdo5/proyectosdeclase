@@ -28,7 +28,7 @@ public class Rectangulo {
     }
 
     public double calcularArea(){
-        return this.ancho*this.alto;
+        return ancho*alto;
     }
 
     public double calcularPerimetro(){
@@ -36,7 +36,7 @@ public class Rectangulo {
     }
 
     public boolean esCuadrado(){
-        return this.ancho==this.alto;
+        return ancho==alto;
     }
 
 
