@@ -6,7 +6,7 @@ public class ProbarPrintf {
         String name="RICARDO";
         int age=21;
 
-        System.out.printf("Nombre: %s, Edad %d,PI: %1.5f",name,age,Math.PI);
+        System.out.printf("Nombre: %s, Edad %d,PI: %.5f",name,age,Math.PI);
     }
 
 }
