@@ -23,33 +23,27 @@ public class avanzados {
     public static void ej2(Scanner sc){
 
         System.out.println("Introduce el tamaño de cada grupo (1-10000) y el de alumnos(0-1000000): ");
-        int group=sc.nextInt();
-        if (group<0||group>10000){
-            System.out.println("El tamaño del grupo debe estar entre 0 y 10000."); //ERROR ANTES DE LEER ALUMNOS EN CASO DE QUE CORESPONDA
+        int c=sc.nextInt();
+        if (c<0||c>10000){
+            System.out.println("El tamaño del grupo debe estar entre 0 y 10000."); //ERROR ANTES DE LEER ALUMNOS EN CASO DE QUE CORRESPONDA.
             System.exit(0);
         }
-        int students=sc.nextInt();
+        int a=sc.nextInt();
 
-        int groupRest=students%group;
-        if (students>0&&students<=1000000&&groupRest==0){ // SI NO SOBRA NINGUN ALUMNO SE COGE EL VALOR DE LA DIVISION
+        int outA=a%c;
+        if (a>0&&a<=1000000&&outA==0){ // SI NO SOBRA NINGÚN ALUMNO SE COGE EL VALOR DE LA DIVISION.
 
-            int groupNumber=students/group;
-            System.out.println(groupNumber);
+            int resultC=a/c;
+            System.out.println(resultC);
 
-        } else if (students>=0&&students<=1000000&&groupRest>0){ // SI SOBRA ALGUNO; SE AÑADE UN GRUPO MAS PARA COMPLETAR.
+        } else if (a>=0&&a<=1000000&&outA>0){ // SI SOBRA ALGUNO; SE AÑADE UN GRUPO MAS PARA COMPLETAR.
 
-            int groupNumber=students/group+1;
-            System.out.println(groupNumber);
+            int resultC =a/c+1;
+            System.out.println(resultC);
 
         } else {
             System.out.println("El número de alumnos debe estar entre 0 y 1000000."); // ERROR EN CASO DE QUE EL VALOR "STUDENTS" NO ESTE ENTRE LOS VALORES INDICADOS.
         }
-
-    } //---------------------------------------------------------------------------
-
-    public static void ej3(Scanner sc){
-
-
 
     } //---------------------------------------------------------------------------
 
