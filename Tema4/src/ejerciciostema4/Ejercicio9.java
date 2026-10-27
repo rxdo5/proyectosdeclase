@@ -19,6 +19,7 @@ public class Ejercicio9 {
             case 8 -> output="ocho";
             case 9 -> output="nueve";
             case 10 -> output="diez";
+            default -> System.out.println("No es válida");
         }*/
 
         switch (nota) {
@@ -54,6 +55,9 @@ public class Ejercicio9 {
                 break;
             case 10:
                 output = "diez";
+                break;
+            default:
+                System.out.println("No es válida");
                 break;
         }
 

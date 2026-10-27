@@ -54,7 +54,7 @@ public class Ejercicio11 {
 
         switch(resto){
             case 0:
-                output="cero";
+                output="cero unidades";
                 break;
             case 1:
                 output="uno";

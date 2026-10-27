@@ -5,22 +5,16 @@ public class Ejercicio7 {
 
     public static int contarCifras(int num1) {
         
-    int cifras = 0;
-        
-    if (num1<999&&num1>=0){
+    int cifras;
 
-        if(num1<10){
-            cifras=1;
-        } else if (num1<100){
-            cifras=2;
-        } else {
-            cifras=3;
-        }
+    if(num1<10){
+        cifras=1;
+    } else if (num1<100){
+        cifras=2;
     } else {
-        System.out.println("El número no es válido.");
-        System.exit(0);
+        cifras=3;
     }
-    
+
     return cifras;
     
 }
@@ -31,7 +25,14 @@ public class Ejercicio7 {
         System.out.println("Introduce el primer número (1-999): ");
         int num1=sc.nextInt();
 
-        System.out.println(Ejercicio7.contarCifras(num1));
+        if (num1<999&&num1>=0) {
+            System.out.println(Ejercicio7.contarCifras(num1));
+        } else {
+            System.out.println("El número no es válido.");
+            System.exit(0);
+        }
+
+
     }
 
 }

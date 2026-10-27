@@ -5,14 +5,11 @@ public class Ejercicio13 {
 
     public static String esMayor(int num1, int num2){
 
-        String primeroMayor="El primer número es mayor que el segundo.";
-        String segundoMayor="El segundo número es mayor que el primero.";
-
         /*if (num1>num2) {
             System.out.println("El primer número es mayor que el segundo.");
         } else { System.out.println("El segundo número es mayor que el primero."); }*/
 
-        return num1>num2 ? primeroMayor : segundoMayor;
+        return num1>num2 ? "El primer número es mayor que el segundo." : "El segundo número es mayor que el primero.";
 
     }
 

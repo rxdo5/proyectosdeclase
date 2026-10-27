@@ -7,7 +7,7 @@ public class Ejercicio8 {
 
         String ret;
 
-        if (edad>0&&edad<13) {
+        if (edad<13) {
             ret="Es un niño.";
         } else if (edad<16) {
             ret="Es un adolescente.";
@@ -27,7 +27,12 @@ public class Ejercicio8 {
         System.out.println("Introduce la edad: ");
         int edad=sc.nextInt();
 
-        System.out.println(Ejercicio8.mostrarMensajeEdad(edad));
+        if(edad>0&&edad<120) {
+            System.out.println(Ejercicio8.mostrarMensajeEdad(edad));
+        } else {
+            System.out.println("Introduzca una edad válida.");
+        }
+
     }
 
 }

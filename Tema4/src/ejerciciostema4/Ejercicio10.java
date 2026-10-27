@@ -43,6 +43,9 @@ public class Ejercicio10 {
             case 9,10:
                 System.out.println("Sobresaliente");
                 break;
+            default:
+                System.out.println("Nota no válida.");
+                break;
         }
 
     }
