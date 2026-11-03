@@ -13,12 +13,22 @@ public class Ascensor {
 
         //int numPisos=sc.nextInt();
 
-        for (int i=sc.nextInt();i>0;i--){ // i = numPisos, termina cuando se acaban
-            piso=sc.nextInt();
-            destino=(Math.abs(destino-piso)); // destino=0 = |0-5|; destino=5 = destino |5-1|; destino=1 = destino |1-10|; destino=10 = destino |10-4|; destino=4 = destino |4-2|.
-            distancia=distancia+destino; // +5 +4 +9 +6 +2;
-            destino=piso; // LLEGA AL DESTINO
-        }
+            for (int i = sc.nextInt(); i > 0; i--) { // i = numPisos, termina cuando se acaban
+                piso = sc.nextInt();
+
+                if(piso!=0) {
+
+                    destino = (Math.abs(destino - piso)); // destino=0 = |0-5|; destino=5 = destino |5-1|; destino=1 = destino |1-10|; destino=10 = destino |10-4|; destino=4 = destino |4-2|.
+                    distancia = distancia + destino; // +5 +4 +9 +6 +2;
+                    destino = piso; // LLEGA AL DESTINO
+
+                } else {
+
+                    return distancia;
+
+                }
+
+            }
 
         return distancia;
 
@@ -34,6 +44,7 @@ public class Ascensor {
     }
 
     public static void main(String[] args) {
+
         System.out.println(ascensor());
     }
 
