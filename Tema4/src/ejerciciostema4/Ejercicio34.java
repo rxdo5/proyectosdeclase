@@ -24,8 +24,7 @@ public class Ejercicio34 {
         }
 
         System.out.println("Has introducido un número negativo. Fin de lectura.");
-        System.out.printf("La media de los 4 números ingresados es: ");
-        System.out.print(media/div);
+        System.out.printf("La media de los 4 números ingresados es: %.2f",media/div);
 
     }
 
