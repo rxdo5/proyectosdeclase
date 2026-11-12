@@ -4,10 +4,11 @@ public class Coche {
 
     String modelo,color,matricula;
     enum Tipo {Mini,Utilitario,Familiar,Deportivo}
+    Tipo tipo;
     boolean metalizado;
 
     public String imprimirCoche(){
-        return modelo+","+color+","+metalizado+","+matricula+","+Tipo.Deportivo+".";
+        return modelo+","+color+","+metalizado+","+matricula+","+tipo+".";
     }
 
     public String fichaCoche(){
@@ -19,6 +20,7 @@ public class Coche {
         this.color=color;
         this.matricula=matricula;
         this.metalizado=metalizado;
+        this.tipo=tipo;
     }
 
 }
