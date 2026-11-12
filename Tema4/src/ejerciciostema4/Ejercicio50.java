@@ -82,9 +82,11 @@ public class Ejercicio50 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduzca el número a comprobar: ");
-        probarApocaliptico(sc.nextInt());
-        //apocaliptico(sc.nextInt());
+        System.out.println("Introduzca el número a comprobar (Long):");
+        apocaliptico(sc.nextInt());
+
+        //System.out.println("Introduzca el número a comprobar (BigInt):");
+        //probarApocaliptico(sc.nextInt());
 
     }
 
