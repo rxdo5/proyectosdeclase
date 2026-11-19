@@ -25,21 +25,15 @@ public class Semaforo {
     }
 
     public boolean esRojo(){
-        if (color==0){
-            return true;
-        } else return false;
+        return color==0;
     }
 
     public boolean esVerde(){
-        if (color==1){
-            return true;
-        } else return false;
+        return color==1;
     }
 
     public boolean esAmarillo(){
-        if (color==2){
-            return true;
-        } else return false;
+        return color==2;
     }
 
     public void cambiar(){
