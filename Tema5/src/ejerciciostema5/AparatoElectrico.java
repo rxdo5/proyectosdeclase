@@ -29,7 +29,7 @@ public class AparatoElectrico {
         return estado;
     }
 
-    public int getTotalOutput() {
+    public static int getTotalOutput() {
         return AparatoElectrico.totalOutput;
     }
 
@@ -73,30 +73,6 @@ public class AparatoElectrico {
                 ", estado=" + estado +
                 ", totalOutput=" + totalOutput +
                 '}';
-    }
-
-    public static void main(String[] args) {
-
-        AparatoElectrico Bombilla=new AparatoElectrico("Bombilla",100);
-        AparatoElectrico Radiador=new AparatoElectrico("Radiador",2000);
-        AparatoElectrico Plancha=new AparatoElectrico("Plancha",1200);
-
-        System.out.println(totalOutput);
-
-        Bombilla.setEstado(true);
-        Plancha.setEstado(true);
-
-        System.out.println(totalOutput);
-
-        Plancha.setEstado(false);
-        Radiador.setEstado(true);
-
-        System.out.println(totalOutput);
-
-        System.out.println(Bombilla.toString());
-
-        System.out.println(totalOutput);
-
     }
 
 }
