@@ -13,14 +13,10 @@ public class InstalacionElectrica {
         Bombilla.setEstado(true);
         Plancha.setEstado(true);
 
-        System.out.println();
+        System.out.println(AparatoElectrico.getTotalOutput());
 
         Plancha.setEstado(false);
         Radiador.setEstado(true);
-
-        System.out.println(AparatoElectrico.getTotalOutput());
-
-        System.out.println(Bombilla.toString());
 
         System.out.println(AparatoElectrico.getTotalOutput());
 
