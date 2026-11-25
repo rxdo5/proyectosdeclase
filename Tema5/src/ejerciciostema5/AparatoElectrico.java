@@ -5,18 +5,16 @@ public class AparatoElectrico {
     private String nombre;
     private int potencia;
     private boolean estado;
-    private String nota;
 
     private static int totalOutput;
 
     public AparatoElectrico(){
     }
 
-    public AparatoElectrico(String nombre,int potencia,String nota){ // SIEMPRE ESTAN APAGADOS AL CREARSE
+    public AparatoElectrico(String nombre,int potencia){ // SIEMPRE ESTAN APAGADOS AL CREARSE
         this.nombre=nombre;
         this.potencia=potencia;
         this.estado=false;
-        this.nota=nota;
     }
 
     public String getNombre() {
@@ -29,10 +27,6 @@ public class AparatoElectrico {
 
     public boolean isEstado() {
         return estado;
-    }
-
-    public String getNota() {
-        return nota;
     }
 
     public int getTotalOutput() {
@@ -59,10 +53,6 @@ public class AparatoElectrico {
 
     }
 
-    public void setNota(String nota) {
-        this.nota = nota;
-    }
-
     public void setTotalOutput(int totalOutput) {
         AparatoElectrico.totalOutput = totalOutput;
     }
@@ -81,16 +71,15 @@ public class AparatoElectrico {
                 "nombre='" + nombre + '\'' +
                 ", potencia=" + potencia +
                 ", estado=" + estado +
-                ", nota='" + nota + '\'' +
                 ", totalOutput=" + totalOutput +
                 '}';
     }
 
     public static void main(String[] args) {
 
-        AparatoElectrico Bombilla=new AparatoElectrico("Bombilla",100,"Solo una bombilla.");
-        AparatoElectrico Radiador=new AparatoElectrico("Radiador",2000,"Solo un radiador.");
-        AparatoElectrico Plancha=new AparatoElectrico("Plancha",1200,"Solo una plancha.");
+        AparatoElectrico Bombilla=new AparatoElectrico("Bombilla",100);
+        AparatoElectrico Radiador=new AparatoElectrico("Radiador",2000);
+        AparatoElectrico Plancha=new AparatoElectrico("Plancha",1200);
 
         System.out.println(totalOutput);
 
