@@ -1,4 +1,4 @@
-package probarPunto;
+package probarpunto;
 
 import ejerciciostema5.Punto;
 
